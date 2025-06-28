@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	// "github.com/BhuwanSingh/restaurant-management/database"
-	// "github.com/BhuwanSingh/restaurant-management/routes"
+	"github.com/BhuwanSingh/restaurant-management/routes"
 	// "github.com/BhuwanSingh/restaurant-management/middleware"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/v2/mongo"
@@ -27,5 +27,7 @@ func main() {
 	routes.TableRoutes(router)
 	routes.OrderRoutes(router)
 	routes.OrderItemRoutes(router)
+	routes.InvoiceRoutes(router)
+
 	routes.Run(":" + port)
 }
