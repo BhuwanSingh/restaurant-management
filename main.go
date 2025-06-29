@@ -7,7 +7,7 @@ import (
 	"github.com/BhuwanSingh/restaurant-management/middleware"
 	"github.com/BhuwanSingh/restaurant-management/routes"
 	"github.com/gin-gonic/gin"
-	"go.mongodb.org/mongo-driver/v2/mongo"
+	"go.mongodb.org/mongo-driver/mongo"
 )
 
 var foodCollection *mongo.Collection = database.openCollection(database.Client, "food")
